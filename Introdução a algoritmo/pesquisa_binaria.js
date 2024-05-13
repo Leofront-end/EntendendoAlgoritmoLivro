@@ -22,7 +22,6 @@ const minhaLista = [1, 3, 5, 7, 9]
 console.log(pesquisaBinaria(minhaLista, 3))
 console.log(pesquisaBinaria(minhaLista, -1))
 
-/*function binary_search(list, item) {
   let low = 0;
   let high = list.length - 1;
 
