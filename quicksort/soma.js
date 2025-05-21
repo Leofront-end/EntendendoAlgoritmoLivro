@@ -1,10 +1,8 @@
-
 function soma(lista){
-    let x = lista[0]
     if (lista.length == 0){
         return 0
     } else {
-        lista.shift()
+        let x = lista.shift()     
         return x + soma(lista)
     }
 }
