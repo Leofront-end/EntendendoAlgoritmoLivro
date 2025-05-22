@@ -19,5 +19,5 @@ function busca_binaria(lista, item) {
 
 const minha_Lista = [1,3,5,7,9]
 
-console.log(busca_binaria(minha_Lista, 3))
+console.log(busca_binaria(minha_Lista, 10))
 console.log(busca_binaria(minha_Lista,-1))
