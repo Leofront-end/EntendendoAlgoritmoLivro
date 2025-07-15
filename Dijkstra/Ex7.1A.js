@@ -1,23 +1,33 @@
 let grafo = {}
 
 grafo["inicio"] = {}
-grafo["inicio"]["a"] = 6
+grafo["inicio"]["a"] = 5
 grafo["inicio"]["b"] = 2
 
 grafo["a"] = {}
-grafo["a"]["fim"] = 1
+grafo["a"]["c"] = 4
+grafo["a"]["d"] = 2
 
 grafo["b"] = {}
-grafo["b"]["a"] = 3
-grafo["b"]["fim"] = 5
+grafo["b"]["a"] = 8
+grafo["b"]["d"] = 7
+
+grafo["c"] = {}
+grafo["c"]["d"] = 6
+grafo["c"]["fim"] = 3
+
+grafo["d"] = {}
+grafo["d"]["fim"] = 1
 
 grafo["fim"] = {}
 
 console.log("ANTES");
 
 let custos = {}
-custos["a"] = 6
+custos["a"] = 5
 custos["b"] = 2
+custos["c"] = Infinity
+custos["d"] = Infinity
 custos["fim"] = Infinity
 
 console.log(custos);
@@ -25,6 +35,8 @@ console.log(custos);
 let pais = {}
 pais["a"] = "Inicio"
 pais["b"] = "Inicio"
+pais["c"] = null
+pais["d"] = null
 pais["fim"] = null
 
 console.log(pais);
