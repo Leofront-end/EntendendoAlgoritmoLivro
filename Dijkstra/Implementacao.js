@@ -35,7 +35,7 @@ let processados = []
 function ache_no_custo_mais_barato(custos) {
     let custo_mais_barato = Infinity
     let nodo_custa_mais_barato = null
-    for (let nodo of Object.keys(custos)) {
+    for (let nodo in custos) {
         let custo = custos[nodo]
         if (custo < custo_mais_barato && !processados.includes(nodo)) {
             custo_mais_barato = custo
@@ -50,7 +50,7 @@ let nodo = ache_no_custo_mais_barato(custos)
 while (nodo != null) {
     let custo = custos[nodo]
     let vizinhos = grafo[nodo]
-    for (let n of Object.keys(vizinhos)) {
+    for (let n in vizinhos) {
         let novo_custo = custo + vizinhos[n]
         if (custos[n] > novo_custo) {
             custos[n] = novo_custo
